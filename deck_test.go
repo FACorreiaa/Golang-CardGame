@@ -1,3 +1,5 @@
+/* Fernando Correia
+Starting with Go */
 package main
 
 import (

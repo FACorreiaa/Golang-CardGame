@@ -1,3 +1,5 @@
+/* Fernando Correia
+Starting with Go */
 package main
 
 import (
@@ -29,13 +31,15 @@ func newDeck() deck {
 }
 
 //d is the reference for a deck
-//deck is
+//deck is the type
+//receiver function
 func (d deck) print() {
 	for i, card := range d {
 		fmt.Println(i, card)
 	}
 }
 
+//range inside a slice
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
